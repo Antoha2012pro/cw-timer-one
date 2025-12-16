@@ -20,3 +20,9 @@ function formattingTime(ms) {
 
     return (`${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}.${String(othersSeconds).padStart(2, "0")}`);
 };
+
+
+function updateTime() {
+    lapTime = Date.now() - initialTime 
+    timeEl.textContent = formattingTime(lapTime)
+}
