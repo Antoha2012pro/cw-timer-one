@@ -66,3 +66,6 @@ h2 {
 p {
 font-size: 60px
 }
+.btn:disabled{
+    cursor: not-allowed;
+}
